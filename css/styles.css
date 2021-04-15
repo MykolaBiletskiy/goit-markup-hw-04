@@ -194,12 +194,20 @@ body{
 	overflow: hidden;
 }
 
-.icon-feature-list{
+.container-icon{
     background: var(--accessorial-background-color);
-    padding-left: 100px;
-    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
+}
+
+.icon-feature-list{
+    width: 70px;
+    height: 70px;
 }
 
 .feature-title,
@@ -277,9 +285,9 @@ body{
     flex-wrap: wrap;
 }
 
-.team-photo{
+/* .team-photo{
     margin-bottom: 30px;
-}
+} */
 
 .team-card  .subtitle{
     font-weight: 500;
@@ -296,13 +304,15 @@ body{
     text-align: center;
 }
 
+.container-team{
+    padding: 30px 32px;
+}
+
 /* Ссылки на соцсети */
 
 .social-link-list{
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
-
 }
 
 .link-button{
@@ -322,7 +332,6 @@ body{
 .link-button:hover{
     background-color: var(--accent-color);
 }
-
 .footer-link-button .link-icon,
 .link-button:hover .link-icon{
     fill: var(--title-text-color);
@@ -383,7 +392,8 @@ padding: 94px 0px;
 
 .page-footer .container{
     display: flex;
-    padding: 60px 0px;
+    padding: 60px 15px;
+    align-items: baseline;
 }
  
 .page-footer .logo{
@@ -422,7 +432,6 @@ padding: 94px 0px;
 
 .footer-title{
     color: var(--title-text-color);
-    margin-top: 12px;
     margin-bottom: 20px;
 }
 

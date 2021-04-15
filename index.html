@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -24,7 +24,7 @@
             <ul class="list auth-nav">
                 <li class="auth-nav-item">
                     <a href="mailto:info@devstudio.com" class="link">
-                        <svg class="icon-auth-nav" wigth="16" height="12">
+                        <svg class="icon-auth-nav" width="16" height="12">
                             <use href="./images/sprite.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com
@@ -55,30 +55,38 @@
                 <h2 class="title section-title visually-hidden">Наши преимущества</h2>
                 <ul class="feature-list">
                     <li class="list feature-list-item">
-                        <svg class="icon-feature-list" width="270" height="120">
-                            <use href="./images/sprite.svg#icon-feature1"></use>
-                        </svg>
+                        <div class="container-icon">
+                            <svg class="icon-feature-list">
+                                <use href="./images/sprite.svg#icon-feature1"></use>
+                            </svg>
+                        </div>
                         <h3 class="subtitle feature-title">Внимание к деталям</h3>
                         <p class="text section-item">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="list feature-list-item">
-                        <svg class="icon-feature-list" width="270" height="120">
-                            <use href="./images/sprite.svg#icon-feature2"></use>
-                        </svg>
+                        <div class="container-icon">
+                            <svg class="icon-feature-list">
+                                <use href="./images/sprite.svg#icon-feature2"></use>
+                            </svg>
+                        </div>
                         <h3 class="subtitle feature-title">Пунктуальность</h3>
                         <p class="text section-item">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="list feature-list-item">
-                        <svg class="icon-feature-list" width="270" height="120">
-                            <use href="./images/sprite.svg#icon-feature3"></use>
-                        </svg>
+                        <div class="container-icon">
+                            <svg class="icon-feature-list">
+                                <use href="./images/sprite.svg#icon-feature3"></use>
+                            </svg>
+                        </div>
                         <h3 class="subtitle feature-title">Планирование</h3>
                         <p class="text section-item">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="list feature-list-item">
-                        <svg class="icon-feature-list" width="270" height="120">
-                            <use href="./images/sprite.svg#icon-feature4"></use>
-                        </svg>
+                        <div class="container-icon">
+                            <svg class="icon-feature-list">
+                                <use href="./images/sprite.svg#icon-feature4"></use>
+                            </svg>
+                        </div>    
                         <h3 class="subtitle feature-title">Современные технологии</h3>
                         <p class="text section-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -111,143 +119,151 @@
                 <ul class="list team-list">
                     <li class="team-card">
                         <img class="team-photo" src="./images/teamcard1.jpg" alt="Игорь Демьяненко фото" width="270">
-                        <h3 class="subtitle">Игорь Демьяненко</h3>
-                        <p lang="en" class="text section-item career">Product Designer</p>
-                        <ul class="list social-link-list">
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Instagram">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Twitter">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Facebook">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="container-team">
+                            <h3 class="subtitle">Игорь Демьяненко</h3>
+                            <p lang="en" class="text section-item career">Product Designer</p>
+                            <ul class="list social-link-list">
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Instagram">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Twitter">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Facebook">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img class="team-photo" src="./images/teamcard2.jpg" alt="Ольга Иванова фото" width="270">
-                        <h3 class="subtitle">Ольга Иванова</h3>
-                        <p lang="en" class="text section-item career">Frontend Developer</p>
-                        <ul class="list social-link-list">
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Instagram">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Twitter">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Facebook">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="container-team">    
+                            <h3 class="subtitle">Ольга Иванова</h3>
+                            <p lang="en" class="text section-item career">Frontend Developer</p>
+                            <ul class="list social-link-list">
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Instagram">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Twitter">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Facebook">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img class="team-photo" src="./images/teamcard3.jpg" alt="Николай Тарасов фото" width="270">
-                        <h3 class="subtitle">Николай Тарасов</h3>
-                        <p lang="en" class="text section-item career">Marketing</p>
-                        <ul class="list social-link-list">
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Instagram">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Twitter">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Facebook">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="container-team">
+                            <h3 class="subtitle">Николай Тарасов</h3>
+                            <p lang="en" class="text section-item career">Marketing</p>
+                            <ul class="list social-link-list">
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Instagram">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Twitter">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Facebook">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="team-card">
                         <img class="team-photo" src="./images/teamcard4.jpg" alt="Михаил Ермаков фото" width="270">
-                        <h3 class="subtitle">Михаил Ермаков</h3>
-                        <p lang="en" class="text section-item career">UI Designer</p>
-                        <ul class="list social-link-list">
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Instagram">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Twitter">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Facebook">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-link-item">
-                                <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
-                                    <svg class="link-icon" width="20px" height="20px">
-                                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="container-team">
+                            <h3 class="subtitle">Михаил Ермаков</h3>
+                            <p lang="en" class="text section-item career">UI Designer</p>
+                            <ul class="list social-link-list">
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Instagram">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Twitter">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Facebook">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-link-item">
+                                    <a href="" class="link link-button" aria-label="Ссылка на Linkedin">
+                                        <svg class="link-icon" width="20px" height="20px">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
